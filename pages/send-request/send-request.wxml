@@ -1,0 +1,18 @@
+<!--pages/send-request/send-request.wxml-->
+<view class="container">
+  <form>
+    <label for="request-title">标题：</label>
+    <input type="text" id="request-title"/>
+
+    <label for="request-content">详述：</label>
+    <textarea id="request-content"/>
+
+    <picker range="{{typeList}}" bindchange='changeType'>选择类型：{{type}}</picker>
+
+    <picker range="{{rewardList}}" bindchange='changeReward'>选择酬金：{{reward}}</picker>
+
+    <picker range="{{creditLevels}}" bindchange='changeCredit'>信用要求：{{creditLevel}}</picker>
+
+    <button bindtap="submit">提交</button>
+  </form>
+</view>

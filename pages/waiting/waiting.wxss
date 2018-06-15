@@ -1,0 +1,25 @@
+/**waiting.wxss**/
+.container {
+  background-color: #eee;
+}
+
+.sort-bar {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 5rpx 20rpx 0;
+  font-size: 35rpx;
+}
+
+.vertical-line {
+  color: #ddd;
+}
+
+.sort-item {
+  padding: 0 40rpx;
+}
+
+.checked {
+  color: #29b58e;
+  border-bottom: 5rpx solid #29b58e;
+}

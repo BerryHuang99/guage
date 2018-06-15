@@ -1,0 +1,94 @@
+<!--index.wxml-->
+<view class="container">
+  <view id="load" wx:if="{{load}}" animation="{{turningAnimation}}">
+    <image id="logo" src="../../resources/logo2.png" animation="{{spinAnimation}}"/>
+  </view>
+
+  <block wx:if="{{hasUserInfo || !canIUse}}">
+    <view id="banner">
+       <view id="search-block">
+        <span class="search-community">{{region[3]}}</span>
+        <input type="text" placeholder="搜索你的邻居" id="search"/>
+        <i class="icon-sousuo iconfont" style="float: right; color: #aaa; line-height:60rpx;"/>
+      </view> 
+      <view class="center">
+        <span class="banner-text">邻里互助,构筑简易生活</span>
+      </view>
+    </view>
+
+    <view id="tool-bar">
+      <view class="tool">
+        <button class="tool-button button-1" bindtap="toSendRequest">
+          <i class="iconfont icon-solution"/>
+        </button>
+        <view>求支援</view>
+      </view>
+      <view class="tool">
+        <button class="tool-button button-2" bindtap="toRequestList">
+          <i class="iconfont icon-bulb"/>
+        </button>
+        <view>去帮忙</view>
+      </view>
+      <view class="tool">
+        <button class="tool-button button-3" bindtap="toWaiting">
+          <i class="iconfont icon-file-exception"/>
+        </button>
+        <view>待完成</view>
+      </view>
+      <view class="tool">
+        <button class="tool-button button-4" bindtap="toHistory">
+          <i class="iconfont icon-reloadtime"/>
+        </button>
+        <view>历史</view>
+      </view>
+    </view>
+
+    <view class="request-list">
+      <view class="title">—— 最新请求 ——</view>
+
+    <block wx:for="{{recentRequests}}" wx:key="{{item.requestId}}">
+      <request-item avatar="{{item.avatar}}" title="{{item.title}}" content="{{item.content}}" requestor="{{item.name}}" reward="{{item.reward}}" time="{{item.time}}" request-class="{{item.requestClass}}" request-id="{{item.requestId}}"></request-item>
+    </block>
+
+    </view>
+  </block>
+
+  <block wx:else>
+    <swiper indicator-dots="true" indicator-color="#ccc" indicator-active-color="#29b58e">
+      <swiper-item id="first">
+        <image src="../../resources/neighbor.png"/>
+        完成注册，走近邻里！
+      </swiper-item>
+      <swiper-item id="second">
+        <image src="../../resources/city.png"/>
+        <view style="padding-bottom: 100rpx">
+          <picker mode="region" bindchange="bindRegionChange" value="{{provinces}}" custom-item="{{customItem}}">
+            <view class="picker">
+              <span id="zone"><icon class="iconfont icon-zuobiao"/>地区：</span>{{region[0]}}，{{region[1]}}，{{region[2]}}
+            </view>
+          </picker>
+
+          <picker mode="selector" range="{{communities[region[1]][region[2]]}}" style="display: inline-block" bindchange="bindCommunityChange">
+            <view class="picker" id="community">
+              <span id="community"><icon class="iconfont icon-home"/>社区：</span>{{region[3]}}
+            </view>
+          </picker>
+          <span style="margin-left:20rpx; line-height:20rpx" bindtouchstart="activateCommunityModal">
+            <icon class="iconfont icon-edit-square-o"/>
+          </span>
+        </view>
+      </swiper-item>
+      <swiper-item id="third">
+        <image src="/resources/tree.png"/>
+        <view>
+           <button id="register" open-type="getUserInfo" bindgetuserinfo="getUserInfo" lang='zh_CN'> 完成注册
+          </button>  
+        </view>
+      </swiper-item>
+    </swiper>
+    <modal hidden="{{communityModal}}" title="新增社区" bindconfirm="addCommunity" bindcancel="cancelCommunityModal">
+      <input placeholder="社区名称" value="{{community}}" type="text" maxlength="10" bindinput="inputCommunity"/>
+    </modal>
+  </block>
+
+</view>

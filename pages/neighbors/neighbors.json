@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "neighbor-item": "/components/neighbor-item/neighbor-item"
+  }
+}

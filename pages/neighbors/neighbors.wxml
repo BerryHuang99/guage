@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="sort-bar">
+    <view class="sort-button checked">
+      随机排序
+    </view>
+    <span class="vertical-line">|</span>
+    <view class="sort-button">
+      信用优先
+    </view>
+    <span class="vertical-line">|</span>
+    <view class="sort-button">
+      热度优先
+    </view>
+  </view>
+
+  <block wx:for="{{neighbors}}" wx:key="{{item.requestId}}">
+    <neighbor-item name="{{item.name}}" avatar="{{item.avatar}}" credit="{{item.credit}}" phone="12345678910" thumb-up="{{item.thumUp}}"></neighbor-item>
+  </block>
+
+</view>

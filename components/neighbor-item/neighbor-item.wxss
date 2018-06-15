@@ -1,0 +1,41 @@
+/* components/neighbor-item/neighbor-item.wxss */
+@import "/resources/icon/iconfont.wxss";
+
+.neighbor-card {
+  padding: 20rpx 30rpx 10rpx;
+  background-color: #fff;
+  /* border-top: solid 1px #eee; */
+  margin: 20rpx;
+  border-radius: 20rpx;
+  box-shadow: 0 0 20rpx #ddd;
+}
+
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10%;
+}
+
+.neighbor-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 25rpx;
+  color: #555;
+}
+
+.neighbor-footer {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20rpx;
+  color: #ccc;
+  padding-top: 10rpx;
+}
+
+.neighbor-header i {
+  padding-right: 10rpx;
+}
+
+.neighbor-info {
+  padding-left: 20rpx;
+}

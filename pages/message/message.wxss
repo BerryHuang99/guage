@@ -1,0 +1,16 @@
+/**message.wxss**/
+
+.container {
+  background-color: #eee;
+  overflow: hidden;
+}
+
+.dialog-time {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  width: 250rpx;
+  font-size: 25rpx;
+  border-radius: 15rpx;
+  text-align: center;
+  margin: auto;
+}

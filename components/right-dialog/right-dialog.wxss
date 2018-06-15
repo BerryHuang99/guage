@@ -1,0 +1,35 @@
+/* components/right-dialog/right-dialog.wxss */
+image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.outer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 30rpx;
+  font-size: 30rpx;
+}
+
+.outer-dialog {
+  background-color: #29b58e;
+  padding: 20rpx;
+  max-width: 400rpx;
+  border-radius: 15rpx;
+  color: #fff;
+}
+
+.triangel-r {
+  width: 40rpx;
+  height: 50rpx;
+  position: relative;
+  right: 20rpx;
+  z-index: 1;
+}
+
+.to {
+  font-size: 20rpx;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}

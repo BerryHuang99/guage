@@ -1,0 +1,36 @@
+/* components/left-dialog/left-dialog.wxss */
+
+image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20rpx;
+  font-size: 30rpx;
+}
+
+.inner-dialog {
+  background-color: #fff;
+  padding: 20rpx;
+  max-width: 400rpx;
+  border-radius: 15rpx;
+}
+
+.triangel-l {
+  width: 40rpx;
+  height: 50rpx;
+  position: relative;
+  left: 20rpx;
+  z-index: 1;
+}
+
+
+.from {
+  font-size: 20rpx;
+  border-bottom: 1px solid #eee;
+}

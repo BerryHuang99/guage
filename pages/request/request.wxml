@@ -1,0 +1,49 @@
+<view class="container">
+  <view class="request-header">
+    <image class="avatar" src="{{avatar}}" />
+    <view class="user-info">
+      <view class="info-item">
+        <i class="iconfont icon-user"/>{{name}}<i class="iconfont icon-man"/>
+      </view>
+      <view class="data">
+        <view class="data-item">
+          <i class="iconfont icon-dengji-copy"/>{{credit}}
+        </view>
+        <view class="data-item">
+          <i class="iconfont icon-like"/>{{thumUp}}
+        </view>
+      </view>
+      <view class="info-item address">
+        <i class="iconfont icon-home"/>住址:未公开
+      </view>
+    </view>
+  </view>
+
+  <view class="request-body">
+    <view class="r-title">
+      {{title}}
+    </view>
+    <view class="r-content">
+      {{content}}
+    </view>
+    <view class="r-condition">
+      <view class="reward">
+        <i class="iconfont icon-jinbi" style="color: gold"/>25
+      </view>
+      <view class="time">
+        {{time}}
+      </view>
+      <view class="class">
+        {{type}}
+      </view>
+      <view class="state">
+        {{state}}
+      </view>
+    </view>
+  </view>
+
+  <view class="request-footer">
+    <button bindtap='toHome'>去帮忙</button>
+    <button><i class="iconfont icon-edit-square-o"/>联系他</button>
+  </view>
+</view>

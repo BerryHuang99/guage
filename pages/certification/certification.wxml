@@ -1,0 +1,29 @@
+<!--pages/certification/certification.wxml-->
+<view class="container">
+  <picker range='{{certificationType}}' bindchange='changeCertification'>
+  选择认证类型: {{certification}}
+  </picker>
+
+  <block wx:if="{{certification=='身份证'}}">
+    <image class="cer-photo" id="ipositive" src="{{ipositiveUrl}}" bindtap='chooseIdPositiveImg'/>
+    <image class="cer-photo" id="iopposite" src="{{ioppositeUrl}}" bindtap='chooseIdOppositeImg'/>
+    <button bindtap='submit'>提交</button>
+  </block>
+
+  <block wx:elif="{{certification=='户口本'}}">
+    <image class="cer-photo" id="hu-positive" src="" />
+    <image class="cer-photo" id="hu-opposite" src="" />
+    <button>提交</button>
+  </block>
+
+  <block wx:elif="{{certification=='居住证明'}}">
+    <image class="cer-photo2" id="res-certification" src="" />
+    <button>提交</button>
+  </block>
+
+  <block wx:elif="{{certification=='其他'}}">
+    <image class="cer-photo2" id="other" src="" />
+    <button>提交</button>
+  </block>
+
+</view>

@@ -1,0 +1,24 @@
+@import "/resources/icon/iconfont.wxss";
+
+/**app.wxss**/
+page {
+  height: 100%;
+  font-weight: 250;
+  font-size: 30rpx;
+  color: #555;
+}
+
+.container {
+  height: 100%;
+  box-sizing: border-box;
+} 
+
+#current {
+  color: #29b58e;
+}
+
+.title {
+  text-align: center;
+  padding: 20rpx 10rpx 10rpx;
+  font-weight: 300;
+}

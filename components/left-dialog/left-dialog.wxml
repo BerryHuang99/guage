@@ -1,0 +1,15 @@
+<!--components/left-dialog/left-dialog.wxml-->
+<view class="left-dialog">
+  <view class="inner" bindtap='showModal'>
+    <image src="/resources/005.png"/>
+    <image class="triangel-l" src="/resources/triangel-l.png"/>
+    <view class="inner-dialog">
+      <view class="from">来自: {{from}}</view>
+      {{content}}
+    </view>
+  </view>
+
+  <modal title="回复 {{from}}" hidden="{{modal}}" bindcancel="cancelModal" bindconfirm="confirmModal">
+    <input type='text' bindinput='inputMessage' value="{{input}}" placeholder='回复内容'></input>
+  </modal>
+</view>

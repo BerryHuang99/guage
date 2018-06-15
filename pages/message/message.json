@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "left-dialog": "/components/left-dialog/left-dialog",
+    "right-dialog": "/components/right-dialog/right-dialog"
+  }
+}

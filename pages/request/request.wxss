@@ -1,0 +1,78 @@
+/**request.wxss**/
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border: solid #fff 10rpx;
+  border-radius: 50%;
+  margin: 30rpx;
+}
+
+.request-header {
+  display: flex;
+  color: #fff;
+  font-size: 300;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20rpx 0;
+  background-color: #29b58e;
+  border-radius: 0 0 50% 0;
+}
+
+.data {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.data-item {
+  margin-right: 40rpx;
+}
+
+i {
+  font-size: 35rpx;
+  padding-right: 10rpx;
+}
+
+.address {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.request-body {
+  margin: 30rpx;
+}
+
+.r-title {
+  font-size: 35rpx;
+  font-weight: 300;
+  padding: 10rpx 0;
+  border-bottom: solid 1px #ddd;
+}
+
+.r-content {
+  min-height: 300rpx;
+  padding: 10rpx 0;
+}
+
+.r-condition {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: solid #ddd 1px;
+  color: #aaa;
+}
+
+.request-footer {
+  margin: 50rpx;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  border: none;
+  background-color: #29b58e;
+  color: #fff;
+  margin-top: 100rpx;
+}

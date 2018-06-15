@@ -1,0 +1,9 @@
+<!--components/right-dialog/right-dialog.wxml-->
+<view class="outer">
+  <view class="outer-dialog">
+    {{content}}
+    <view class="to">发给：{{to}}</view>
+  </view>
+  <image class="triangel-r" src="/resources/triangel-r.png"/>
+  <image src="/resources/005.png"/>
+</view> 

@@ -1,0 +1,110 @@
+<!--personal.wxml-->
+<view class="container">
+  <view id="personal-header">
+    <image class="avatar" src="{{userInfo.avatarUrl}}"/>
+    <view class="name">{{userInfo.nickName}}<i class="iconfont icon-man" /></view>
+    <view class="info">
+      <view class="credit"><i class="iconfont icon-dengji-copy"/>信用：150</view>
+      <view class="thumbs-up"><i class="iconfont icon-like"/>点赞：0</view>
+    </view>
+  </view>
+
+  <view class="option-bar wallet" bindtap="toWallet">
+    <view class="left">
+      <i class="iconfont icon-qianbao"/>
+      钱包
+    </view>
+    <view class="right">
+      >
+    </view>
+  </view>
+
+  <view class="option-bar" bindtap="showAddressModal">
+    <view class="left">
+      <i class="iconfont icon-home"/>
+      住址
+    </view>
+    <view class="right">
+      
+    </view>
+  </view>
+
+  <view class="option-bar" bindtap="showVillageModal">
+    <view class="left">
+      <i class="iconfont icon-zuobiao"/>
+      社区
+    </view>
+    <view class="right">
+      辽宁省，沈阳市，东北大学
+    </view>
+  </view>
+
+  <view class="option-bar" bindtap="showPhoneModal">
+    <view class="left">
+      <i class="iconfont icon-phone"/>
+      联系电话
+    </view>
+    <view class="right">
+      
+    </view>
+  </view>
+
+  <view class="option-bar">
+    <view class="left">
+      <i class="iconfont icon-tag"/>
+      公开个人信息
+    </view>
+    <view class="right">
+      <switch/>
+    </view>
+  </view>
+
+  <view class="option-bar" bindtap="toCertification">
+    <view class="left">
+      <i class="iconfont icon-iconfontmingpian"/>
+      身份认证
+    </view>
+    <view class="right">
+      >
+    </view>
+  </view>
+
+  <view class="option-bar" bindtap="toCreditAnalysis">
+    <view class="left">
+      <i class="iconfont icon-xinyongxinxi"/>
+      信用情况
+    </view>
+    <view class="right">
+      >
+    </view>
+  </view>
+
+  <view class="option-bar" bindtap="showSuggestModal">
+    <view class="left">
+      <i class="iconfont icon-warning-circle-o"/>
+      意见反馈
+    </view>
+    <view class="right">
+      >
+    </view>
+  </view>
+
+  <modal class="modal" hidden="{{addressModal}}" title="住址" bindconfirm="" bindcancel="cancelAddressModal">
+    <input type="text" placeholder="输入住址"/>
+  </modal>
+
+  <modal class="modal" hidden="{{phoneModal}}" title="联系电话" bindconfirm="" bindcancel="cancelPhoneModal">
+    <input type="text" placeholder="输入电话"/>
+  </modal>
+
+  <modal class="modal" hidden="{{villageModal}}" title="修改社区" bindconfirm="" bindcancel="cancelVillageModal">
+    <input type="text" placeholder="社区"/>
+  </modal>
+
+  <modal class="modal" hidden="{{suggestModal}}" title="意见反馈" bindconfirm="" bindcancel="cancelSuggestModal">
+    <input type="text" placeholder="你的宝贵意见"/>
+  </modal>
+
+  <radar></radar>
+
+</view>

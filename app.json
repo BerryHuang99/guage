@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/message/message",
+    "pages/neighbors/neighbors",
+    "pages/personal/personal",
+    "pages/request-list/request-list",
+    "pages/waiting/waiting",
+    "pages/request/request",
+    "pages/logs/logs",
+    "pages/history/history",
+    "pages/send-request/send-request",
+    "pages/wallet/wallet",
+    "pages/certification/certification",
+    "pages/neighbor/neighbor",
+    "pages/credit-analysis/credit-analysis"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#29b58e",
+    "navigationBarTitleText": "瓜葛",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#29b58e",
+    "backgroundColor": "#fff",
+    "hidden": true,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/resources/icon/tabBar/home.png",
+        "selectedIconPath": "/resources/icon/selected-tabBar/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "iconPath": "/resources/icon/tabBar/message.png",
+        "selectedIconPath": "/resources/icon/selected-tabBar/message.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/neighbors/neighbors",
+        "iconPath": "/resources/icon/tabBar/team.png",
+        "selectedIconPath": "/resources/icon/selected-tabBar/team.png",
+        "text": "邻居"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "iconPath": "/resources/icon/tabBar/user.png",
+        "selectedIconPath": "/resources/icon/selected-tabBar/user.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "enablePullDownRefresh": true
+}

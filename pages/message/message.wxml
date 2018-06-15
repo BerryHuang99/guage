@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <block wx:for="{{dialogs}}" wx:key="{{item.messageId}}">
+    <block wx:if="{{!dialogs[index - 1] || (item.timeValue - dialogs[index - 1].timeValue) > 1}}">
+      <view class="dialog-time">
+        {{item.time}}
+      </view>
+    </block>
+
+    <block wx:if="{{item.type == 'inner'}}">
+      <left-dialog from="{{item.user}}" content="{{item.content}}" time="{{item.time}}" bindconfirm="sendMessage"></left-dialog> 
+    </block>
+
+    <block wx:else>
+      <right-dialog to="{{item.sendTo}}" content="{{item.content}}" time="{{item.time}}"></right-dialog>
+    </block>
+
+  </block>
+
+</view>

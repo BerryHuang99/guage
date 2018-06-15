@@ -1,0 +1,4 @@
+<!--pages/credit-analysis/credit-analysis.wxml-->
+<view class="container">
+  <canvas class='radarCanvas' canvas-id='radarCanvas'></canvas>
+</view>

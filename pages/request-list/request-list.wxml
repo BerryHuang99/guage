@@ -1,0 +1,26 @@
+<!--personal.wxml-->
+<view class="container">
+  <view class="sort-bar">
+    <view class="sort-item checked">
+      最新
+    </view>
+    <span class="vertical-line">|</span>
+    <view class="sort-item">
+      酬金
+    </view>
+    <span class="vertical-line">|</span>
+    <view class="sort-item">
+      <picker>分类</picker>
+    </view>
+  </view>
+
+   <!-- request items -->
+   <view class="request-list">
+      
+    <block wx:for="{{requests}}" wx:key="{{item.requestId}}">
+      <request-item avatar="{{item.avatar}}" title="{{item.title}}" content="{{item.content}}" requestor="{{item.name}}" reward="{{item.reward}}" time="{{item.time}}" request-class="{{item.requestClass}}" request-id="{{item.requestId}}"></request-item>
+    </block>
+
+  </view>
+
+</view>

@@ -1,0 +1,32 @@
+<!--components/neighbor-item/neighbor-item.wxml-->
+<view class="container">
+
+  <view class="neighbor-card">
+    <view class="neighbor-header" bindtap="toDetail">
+      <image class="avatar" src="{{avatar}}"/>
+      <view class="neighbor-info">
+        <view class="name">
+        <i class="iconfont icon-user"/>{{name}}
+        </view>
+        <view class="credit">
+          <i class="iconfont icon-dengji-copy"/>信用：{{credit}}
+        </view>
+        <view class="address">
+          <i class="iconfont icon-home"/>住址：{{address}}
+        </view>
+      </view>
+    </view>
+    <view class="neighbor-footer">
+      <view class="call">
+        <i class="iconfont icon-phone"/>
+      </view>
+      <view class="leave-message">
+        <i class="iconfont icon-edit-square-o"/>
+      </view>
+      <view class="thumb-up">
+        <i class="iconfont icon-like"/>{{thumbUp}}
+      </view>
+    </view>
+  </view>
+
+</view>

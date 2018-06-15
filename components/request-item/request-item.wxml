@@ -1,0 +1,27 @@
+<!--components/request-item/request-item.wxml-->
+<view class="request-item" bindtap="toRequest">
+  <view class="request-head">
+    <image class="request-avatar" src="{{avatar}}"/>
+
+    <view class="request-info">
+      <view class="request-title">{{title}}</view>
+      <view class="request-content">{{content}}</view>
+    </view>
+  </view>
+
+  <view class="request-illus">
+    <view class="requester">
+      {{requestor}}
+    </view>
+    <view class="request-reward">
+        <i class="iconfont icon-jinbi request-icon" style="color: gold"/> 
+      {{reward}}
+    </view>
+    <view class="request-time">
+      {{time}}
+    </view>
+    <view class="request-class">
+      {{requestClass}}
+    </view>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+/* pages/send-request/send-request.wxss */
+.container {
+  margin: 30rpx 40rpx;
+}
+#request-title, #request-content {
+  border: solid #eee 1px;
+  border-radius: 10rpx;
+  padding: 10rpx;
+  margin: 10rpx 0;
+  width: 100%;
+}
+
+picker {
+  margin: 10rpx 0;
+}
+
+button {
+  margin-top: 200rpx;
+  background-color: #29b58e;
+  color: #fff;
+  border: none;
+}

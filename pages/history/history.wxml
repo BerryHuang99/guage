@@ -1,0 +1,7 @@
+<!--pages/history/history.wxml-->
+<view class="history">
+
+<request-item avatar="{{userInfo.avatarUrl}}" title="请求标题" content="内容" requestor="发布者" reward="25" time="2018-06-05" request-class="类别" bindtap="toRequest"></request-item>
+
+
+</view>

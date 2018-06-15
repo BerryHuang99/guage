@@ -1,0 +1,28 @@
+<!--pages/neighbor/neighbor.wxml-->
+<view class="container">
+  <view class="banner">
+    <image src="/resources/01.jpg" class="avatar"/>
+    <view class="userinfo">
+      <view class="user-item">
+        <i class="iconfont icon-user label"/>小虫<i class="iconfont icon-man"/>
+      </view>
+      <view class="user-item">
+        <i class="iconfont icon-dengji-copy label"/>72
+        <i class="iconfont icon-like"/> 75
+      </view>
+      <view class="user-item">
+        <i class="iconfont icon-phone"/>电话：13032490916
+      </view>
+      <view class="user-item">
+        <i class="iconfont icon-home label"/>住址：未公开
+      </view>
+    </view>
+  </view>
+
+  <view class="option">
+    <view class="option-1">
+      <button><i class="iconfont icon-solution"/>找他帮忙</button>
+      <button><i class="iconfont icon-liuyan"/>给他留言</button>
+    </view>
+  </view>
+</view>

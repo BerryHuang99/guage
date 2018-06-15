@@ -1,0 +1,18 @@
+<!--pages/wallet/wallet.wxml-->
+<view class="container">
+  <view class="ballance">
+  ￥100
+  </view>
+
+  <button bindtap="showWithdrawModal">提现</button>
+
+  <modal class="modal" hidden="{{withdrawModal}}" bindconfirm="" bindcancel="cancelWithdrawModal" title="提现金额">
+    <input type="number" maxlength="100" placeholder="输入金额" value=""/>
+  </modal>
+
+  <button bindtap="showRechargeModal">充值</button>
+
+  <modal class="modal" hidden="{{rechargeModal}}" bindconfirm="" bindcancel="cancelRechargeModal" title="充值金额">
+    <input type="number" maxlength="100" placeholder="输入金额"/>
+  </modal>
+</view>

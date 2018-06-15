@@ -1,0 +1,72 @@
+@import "/resources/icon/iconfont.wxss";
+/* components/request-item/request-item.wxss */
+/**request list**/
+.request-item {
+  padding: 20rpx 30rpx;
+  overflow: hidden;
+  background-color: #fff;
+  /* border-top: #eee 1px solid; */
+}
+
+.request-head {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.request-avatar {
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+  margin: 20rpx;
+}
+
+.request-info {
+  width: 500rpx;
+  height: 100rpx;
+  margin: 20rpx;
+  overflow: hidden;
+}
+
+.request-title {
+  margin: 15rpx 0;
+  font-size: 30rpx;
+  font-weight: 300;
+  width: 200rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.request-content {
+  width: 500rpx;
+  margin: 15rpx 0;
+  font-size: 25rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.request-illus {
+  font-size: 25rpx;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  color: #aaa;
+}
+
+.requester {
+  width: 100rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.request-class {
+  color: #fff;
+  background-color: #29b58e;
+  padding: 5rpx 10rpx;
+  border-radius: 5rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+}
