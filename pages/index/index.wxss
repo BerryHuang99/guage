@@ -136,7 +136,7 @@ picker span {
   height: 100rpx;
   border: none;
   border-radius: 50rpx 50rpx;
-  background-color: #29b58e;
+  background-image: linear-gradient(to bottom right, #B1DED6, #29b58e);
   overflow: hidden;
   display: flex;
   justify-content: center;

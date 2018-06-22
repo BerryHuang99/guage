@@ -151,6 +151,7 @@ Page({
           userInfo: e.detail.userInfo,
           hasUserInfo: true
         });
+        // request
         wx.showTabBar();
         wx.showTabBarRedDot({
           index: 1,
