@@ -6,27 +6,35 @@
 瓜葛小程序面向社区居民提供有偿性的互帮互助功能。
 
 - register
+
 ![register](screenshot/reg.jpg)
 
 - home page
-![home](sreenshot/home.png)
+
+![home](screenshot/home.png)
 
 - message
+
 ![message](screenshot/message.jpg)
 
 - neighbor list
+
 ![neighbors](screenshot/neighbors.png)
 
 - personal page
+
 ![person](screenshot/per.png)
 
 - request list
+
 ![requests](screenshot/requests.png)
 
 - send request
+
 ![send](screenshot/send.png)
 
 - credit analysis
+
 ![credit](screenshot/credit.png)
 
 ## Dependent
@@ -34,7 +42,7 @@
 - Baidu Map Api
     [百度地图 小程序 API](https://lbsyun.baidu.com/index.php?title=wxjsapi)
 
-## usage
+## Usage
 
 1. [下载小程序开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html)
 2. 下载项目到本地
